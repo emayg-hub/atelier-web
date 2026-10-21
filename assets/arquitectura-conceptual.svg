@@ -1,0 +1,70 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 800 800" fill="none">
+<defs>
+ <linearGradient id="bg" x1="60" y1="60" x2="730" y2="800" gradientUnits="userSpaceOnUse"><stop stop-color="#e9e7dd"/><stop offset="1" stop-color="#dedfd1"/></linearGradient>
+ <linearGradient id="wall" x1="300" y1="310" x2="600" y2="610" gradientUnits="userSpaceOnUse"><stop stop-color="#eae6d8"/><stop offset="1" stop-color="#ccc7b6"/></linearGradient>
+ <linearGradient id="front" x1="100" y1="300" x2="400" y2="650" gradientUnits="userSpaceOnUse"><stop stop-color="#f6f1e4"/><stop offset="1" stop-color="#d9d4c5"/></linearGradient>
+ <linearGradient id="recess" x1="0" x2="1"><stop stop-color="#545e4c"/><stop offset="1" stop-color="#a7ab96"/></linearGradient>
+ <linearGradient id="canopy" x1="400" y1="200" x2="500" y2="600" gradientUnits="userSpaceOnUse"><stop stop-color="#bfc5a9"/><stop offset="1" stop-color="#7c8b6b"/></linearGradient>
+ <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="11"/></filter>
+ <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse" patternTransform="matrix(1 .55 -1 .55 400 100)"><path d="M60 0H0V60" stroke="#aeb39f" stroke-width=".6" opacity=".45"/></pattern>
+</defs>
+<path fill="url(#bg)" d="M0 0h800v800H0z"/>
+<circle cx="594" cy="203" r="87" fill="#d8d3ba" opacity=".55"/>
+<path fill="url(#grid)" d="M0 120h800v570H0z"/>
+<path d="m163 534 321-145 230 146-300 167Z" fill="#929a8040" filter="url(#shadow)"/>
+<!-- Socle et cour : composition conceptuelle originale, pas un render du collège. -->
+<path d="m116 513 302-173 280 163-300 174Z" fill="#c6c9b5"/>
+<path d="m116 513 282 164v17L116 530Z" fill="#b3b9a3"/>
+<path d="m398 677 300-174v17L398 694Z" fill="#a2ad92"/>
+<path d="m141 511 278-159 252 149-273 158Z" fill="#e6e4d7"/>
+<path d="m419 352 252 149-51 30-251-149Z" fill="#d8d9c8"/>
+<!-- Volume arrière -->
+<path d="m352 272 140-81 151 88-140 81Z" fill="#faf6e9"/>
+<path d="m352 272 151 88v157l-151-87Z" fill="url(#front)"/>
+<path d="m503 360 140-81v157l-140 81Z" fill="url(#wall)"/>
+<path d="m352 272 151 88 140-81v11l-140 81-151-88Z" fill="#e0dccd"/>
+<path d="m529 377 88-51v61l-88 51Z" fill="#747e69"/>
+<path d="m535 377 76-44v49l-76 44Z" fill="#9da58d"/>
+<path d="m558 362 0 51m28-67v51" stroke="#c9ccba" stroke-width="4"/>
+<path d="m528 458 88-51v11l-88 51Z" fill="#b8bca7"/>
+<!-- Couloir en arcades -->
+<path d="m159 372 163-94 139 81-163 94Z" fill="#f7f3e7"/>
+<path d="m159 372 139 81v155l-139-81Z" fill="url(#front)"/>
+<path d="m298 453 163-94v155l-163 94Z" fill="url(#wall)"/>
+<path d="m159 372 139 81 163-94v12l-163 94-139-81Z" fill="#d8d4c6"/>
+<path d="m177 501 0-69c0-30 34-10 34 20v69Z" fill="#b7bba7"/>
+<path d="m182 504 0-67c0-23 23-9 23 18v63Z" fill="url(#recess)"/>
+<path d="m222 527 0-69c0-30 34-10 34 20v69Z" fill="#b7bba7"/>
+<path d="m227 530 0-67c0-23 23-9 23 18v63Z" fill="url(#recess)"/>
+<path d="m267 553 0-69c0-30 20-18 20 12v69Z" fill="#b7bba7"/>
+<!-- Baies latérales -->
+<path d="m317 577 0-78c0-21 28-40 28-16v78Zm43-25v-78c0-21 28-40 28-16v78Zm43-25v-78c0-21 28-40 28-16v78Z" fill="#858f77"/>
+<path d="m326 575 0-76c0-15 19-28 19-16v78Zm43-25v-76c0-15 19-28 19-16v78Zm43-25v-76c0-15 19-28 19-16v78Z" fill="#b0b59f"/>
+<!-- Terrasse, marches et ombre portée -->
+<path d="m297 608 164-94 49 28-164 95Z" fill="#d6d8c6"/>
+<path d="m346 637 164-95v10l-164 95Z" fill="#b7bfa6"/>
+<path d="m346 647 164-95 16 9-164 95Z" fill="#e5e4d7"/>
+<path d="m362 656 164-95v8l-164 95Z" fill="#bac1ab"/>
+<path d="m362 664 164-95 16 9-164 95Z" fill="#eeece0"/>
+<path d="m378 673 164-95v8l-164 95Z" fill="#b8c0a8"/>
+<path d="m461 514 74-43 77 44-74 43Z" fill="#b9c0a34d"/>
+<!-- Jardin -->
+<path d="m497 581 106-62 35 21-106 61Z" fill="#a6b18e"/>
+<path d="m497 581 35 20v13l-35-20Z" fill="#a1ac8c"/>
+<path d="m532 601 106-61v13l-106 61Z" fill="#879978"/>
+<path d="m560 554 23 12" stroke="#7c8e69" stroke-width="1.5"/>
+<path d="m192 535 41 24-31 18-41-24Z" fill="#9eac88"/>
+<!-- Arbre et feuillage stylisés -->
+<path d="m571 506 19 11 31-18-19-11Z" fill="#75856233"/>
+<path d="M589 505V386" stroke="#8d8874" stroke-width="7"/>
+<path d="m590 443-23-28m23 12 20-30" stroke="#8d8874" stroke-width="3"/>
+<ellipse cx="589" cy="374" rx="44" ry="63" fill="url(#canopy)"/>
+<ellipse cx="572" cy="377" rx="33" ry="47" fill="#aab695" opacity=".6"/>
+<path d="M181 533v-45" stroke="#8d8874" stroke-width="3"/>
+<ellipse cx="181" cy="480" rx="22" ry="29" fill="#8f9d7c"/>
+<ellipse cx="173" cy="477" rx="14" ry="22" fill="#abb797"/>
+<!-- Repères de dessin -->
+<path d="M112 627h93m-46-12v24M554 635h78m-39-10v20" stroke="#8d9680" stroke-width=".8"/>
+<path d="m184 332 131-76m-134 69 6 13m125-89 6 13" stroke="#a6ad97" stroke-width=".8"/>
+<path d="m650 311 0 131m-6-127 12-7m-12 137 12-7" stroke="#a6ad97" stroke-width=".8"/>
+</svg>
