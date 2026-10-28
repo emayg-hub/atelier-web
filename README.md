@@ -20,18 +20,28 @@ Luego visita http://127.0.0.1:5500. Detén el servidor con Ctrl+C.
 - Navegación móvil y galería con miniaturas, ampliación, teclado y deslizamiento.
 
 La ilustración de portada es conceptual; no representa el colegio ALTIORA.
-La galería incluye los 34 renders proporcionados del colegio ALTIORA, conservando sus nombres originales. Cada vista tiene un título y texto alternativo descriptivos. Los renders se muestran completos, sin recortar su composición.
+La galería incluye los 34 renders proporcionados del colegio ALTIORA, clasificados en 15 exteriores y 19 interiores. Cada vista tiene un título y texto alternativo descriptivos. Los renders se muestran completos, sin recortar su composición.
 
 ## Agregar el logo y los renders
 
 1. Guarda el logo PNG en assets/ y configura su ruta en config.js, en logo.
-2. Guarda los renders PNG o JPG en assets/colegio/.
+2. Guarda los renders PNG o JPG en assets/colegio/exteriores/ o assets/colegio/interiores/.
 3. Agrega entradas al arreglo project.images en config.js. Por ejemplo:
 
-    { src: "assets/colegio/fachada.jpg", alt: "Descripción de la fachada real", caption: "Fachada principal" }
+    { src: "assets/colegio/exteriores/fachada.jpg", category: "exteriores", alt: "Descripción de la fachada real", caption: "Fachada principal" }
 
 La galería sustituye automáticamente el espacio reservado cuando hay imágenes configuradas.
 Usa descripciones reales y conserva los originales; para la web conviene optimizar copias.
+
+## Categorías de la galería
+
+Los filtros Exteriores e Interiores muestran únicamente sus imágenes, miniaturas y contador.
+El cambio automático, las flechas y la vista ampliada recorren la categoría seleccionada.
+Al cambiar de categoría se muestra su primera imagen y se reinicia el intervalo de 6 segundos.
+La pausa elegida por el visitante se conserva al cambiar de categoría.
+Cada entrada de project.images incluye category: "exteriores" o "interiores".
+project.defaultCategory indica la categoría inicial. Agrega las nuevas imágenes a config.js;
+la página estática no lee automáticamente el contenido de las carpetas.
 
 ## Cambio automático de imágenes
 
